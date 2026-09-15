@@ -167,7 +167,7 @@ def subgrid_info(grid_fname, noise_fname=None):
             # Be sure to cut out the -100's in the calculation of the minimum
             qmin = np.amin(f_fluxes[f_fluxes > -99.99])
             qmax = np.amax(f_fluxes)
-            qunique = np.unique(qvals)
+            qunique = np.unique(f_fluxes)
 
             q = "symlog" + f + "_wd_bias"
             info_dict[q] = {}
